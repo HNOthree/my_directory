@@ -1,0 +1,1 @@
+python3 /home/shom-research/research/m6A/8_8_target_region_overlap_miRNA1.py
