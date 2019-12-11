@@ -153,26 +153,26 @@ quantTranscriptomeBan             IndelSoftclipSingleend
 twopass1readsN                    18446744073709551615
 twopassMode                       None
 ##### Command Line:
-STAR --runThreadN 6 --runMode genomeGenerate --genomeDir /home/ubuntu/scp/Annotation --genomeFastaFiles /home/ubuntu/scp/Annotation/NC_019859.2.fasta --sjdbGTFfile /home/ubuntu/scp/Annotation/Latipes_merged_chr1.gtf
+STAR --runThreadN 10 --runMode genomeGenerate --genomeDir /mnt/Reference --genomeFastaFiles /mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta --sjdbGTFfile /mnt/Annotation/Latipes_merged.gtf
 ##### Initial USER parameters from Command Line:
 ###### All USER parameters from Command Line:
-runThreadN                    6     ~RE-DEFINED
+runThreadN                    10     ~RE-DEFINED
 runMode                       genomeGenerate     ~RE-DEFINED
-genomeDir                     /home/ubuntu/scp/Annotation     ~RE-DEFINED
-genomeFastaFiles              /home/ubuntu/scp/Annotation/NC_019859.2.fasta        ~RE-DEFINED
-sjdbGTFfile                   /home/ubuntu/scp/Annotation/Latipes_merged_chr1.gtf     ~RE-DEFINED
+genomeDir                     /mnt/Reference     ~RE-DEFINED
+genomeFastaFiles              /mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta        ~RE-DEFINED
+sjdbGTFfile                   /mnt/Annotation/Latipes_merged.gtf     ~RE-DEFINED
 ##### Finished reading parameters from all sources
 
 ##### Final user re-defined parameters-----------------:
 runMode                           genomeGenerate
-runThreadN                        6
-genomeDir                         /home/ubuntu/scp/Annotation
-genomeFastaFiles                  /home/ubuntu/scp/Annotation/NC_019859.2.fasta   
-sjdbGTFfile                       /home/ubuntu/scp/Annotation/Latipes_merged_chr1.gtf
+runThreadN                        10
+genomeDir                         /mnt/Reference
+genomeFastaFiles                  /mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta   
+sjdbGTFfile                       /mnt/Annotation/Latipes_merged.gtf
 
 -------------------------------
 ##### Final effective command line:
-STAR   --runMode genomeGenerate   --runThreadN 6   --genomeDir /home/ubuntu/scp/Annotation   --genomeFastaFiles /home/ubuntu/scp/Annotation/NC_019859.2.fasta      --sjdbGTFfile /home/ubuntu/scp/Annotation/Latipes_merged_chr1.gtf
+STAR   --runMode genomeGenerate   --runThreadN 10   --genomeDir /mnt/Reference   --genomeFastaFiles /mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta      --sjdbGTFfile /mnt/Annotation/Latipes_merged.gtf
 
 ##### Final parameters after user input--------------------------------:
 versionSTAR                       20201
@@ -180,12 +180,12 @@ versionGenome                     20101   20200
 parametersFiles                   -   
 sysShell                          -
 runMode                           genomeGenerate
-runThreadN                        6
+runThreadN                        10
 runDirPerm                        User_RWX
 runRNGseed                        777
-genomeDir                         /home/ubuntu/scp/Annotation
+genomeDir                         /mnt/Reference
 genomeLoad                        NoSharedMemory
-genomeFastaFiles                  /home/ubuntu/scp/Annotation/NC_019859.2.fasta   
+genomeFastaFiles                  /mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta   
 genomeChainFiles                  -   
 genomeSAindexNbases               14
 genomeChrBinNbits                 18
@@ -313,7 +313,7 @@ chimOutType                       SeparateSAMold
 chimFilter                        banGenomicN   
 chimSegmentReadGapMax             0
 sjdbFileChrStartEnd               -   
-sjdbGTFfile                       /home/ubuntu/scp/Annotation/Latipes_merged_chr1.gtf
+sjdbGTFfile                       /mnt/Annotation/Latipes_merged.gtf
 sjdbGTFchrPrefix                  -
 sjdbGTFfeatureExon                exon
 sjdbGTFtagExonParentTranscript    transcript_id
@@ -329,29 +329,57 @@ twopassMode                       None
 ----------------------------------------
 
 Finished loading and checking parameters
-Oct 01 09:30:19 ... starting to generate Genome files
-/home/ubuntu/scp/Annotation/NC_019859.2.fasta : chr # 0  "NC_019859.2" chrStart: 0
-Number of SA indices: 75378304
-Oct 01 09:30:20 ... starting to sort Suffix Array. This may take a long time...
-Number of chunks: 6;   chunks size limit: 120605280 bytes
-Oct 01 09:30:21 ... sorting Suffix Array chunks and saving them to disk...
-Writing 10554008 bytes into /home/ubuntu/scp/Annotation/SA_5 ; empty space on disk = 15611559936 bytes ... done
-Writing 111185656 bytes into /home/ubuntu/scp/Annotation/SA_4 ; empty space on disk = 15601004544 bytes ... done
-Writing 119785552 bytes into /home/ubuntu/scp/Annotation/SA_0 ; empty space on disk = 15489818624 bytes ...Writing 120459320 bytes into /home/ubuntu/scp/Annotation/SA_2 ; empty space on disk = 15459028992 bytes ... done
+Oct 01 13:41:00 ... starting to generate Genome files
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 0  "NC_019859.2" chrStart: 0
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 1  "NC_019860.2" chrStart: 37748736
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 2  "NC_019861.2" chrStart: 63176704
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 3  "NC_019862.2" chrStart: 101449728
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 4  "NC_019863.2" chrStart: 134479872
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 5  "NC_019864.2" chrStart: 167772160
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 6  "NC_019865.2" chrStart: 200278016
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 7  "NC_019866.2" chrStart: 234881024
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 8  "NC_019867.2" chrStart: 261357568
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 9  "NC_019868.2" chrStart: 294912000
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 10  "NC_019869.2" chrStart: 326369280
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 11  "NC_019870.2" chrStart: 354680832
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 12  "NC_019871.2" chrStart: 385351680
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 13  "NC_019872.2" chrStart: 419430400
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 14  "NC_019873.2" chrStart: 450101248
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 15  "NC_019874.2" chrStart: 480772096
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 16  "NC_019875.2" chrStart: 513802240
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 17  "NC_019876.2" chrStart: 545783808
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 18  "NC_019877.2" chrStart: 576716800
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 19  "NC_019878.2" chrStart: 602406912
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 20  "NC_019879.2" chrStart: 628359168
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 21  "NC_019880.2" chrStart: 659554304
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 22  "NC_019881.2" chrStart: 688652288
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 23  "NC_019882.2" chrStart: 713293824
+/mnt/Reference/GCF_002234675.1_ASM223467v1_genomic.fasta : chr # 24  "NC_004387.1" chrStart: 737148928
+Number of SA indices: 1467132172
+Oct 01 13:41:14 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 10;   chunks size limit: 1304117480 bytes
+Oct 01 13:41:17 ... sorting Suffix Array chunks and saving them to disk...
+Writing 205714464 bytes into /mnt/Reference/SA_9 ; empty space on disk = 876093198336 bytes ... done
+Writing 1261784872 bytes into /mnt/Reference/SA_1 ; empty space on disk = 875887480832 bytes ... done
+Writing 1289742704 bytes into /mnt/Reference/SA_8 ; empty space on disk = 874620633088 bytes ... done
+Writing 1283360184 bytes into /mnt/Reference/SA_2 ; empty space on disk = 873325715456 bytes ... done
+Writing 1244854208 bytes into /mnt/Reference/SA_6 ; empty space on disk = 872037203968 bytes ... done
+Writing 1295857072 bytes into /mnt/Reference/SA_5 ; empty space on disk = 870792417280 bytes ...Writing 1299727712 bytes into /mnt/Reference/SA_7 ; empty space on disk = 869732564992 bytes ... done
  done
-Writing 120595008 bytes into /home/ubuntu/scp/Annotation/SA_3 ; empty space on disk = 15249567744 bytes ... done
-Writing 120446888 bytes into /home/ubuntu/scp/Annotation/SA_1 ; empty space on disk = 15128969216 bytes ... done
-Oct 01 09:30:31 ... loading chunks from disk, packing SA...
-Oct 01 09:30:32 ... finished generating suffix array
-Oct 01 09:30:32 ... generating Suffix Array index
-Oct 01 09:30:48 ... completed Suffix Array index
-Oct 01 09:30:48 ..... processing annotations GTF
-Processing sjdbGTFfile=/home/ubuntu/scp/Annotation/Latipes_merged_chr1.gtf, found:
-		2382 transcripts
-		22301 exons (non-collapsed)
-		10240 collapsed junctions
-Oct 01 09:30:48 ..... finished GTF processing
-Oct 01 09:30:48   Loaded database junctions from the GTF file: /home/ubuntu/scp/Annotation/Latipes_merged_chr1.gtf: 10240 total junctions
+Writing 1299294256 bytes into /mnt/Reference/SA_0 ; empty space on disk = 868201721856 bytes ... done
+Writing 1274409544 bytes into /mnt/Reference/SA_4 ; empty space on disk = 866897211392 bytes ... done
+Writing 1282312360 bytes into /mnt/Reference/SA_3 ; empty space on disk = 865617686528 bytes ... done
+Oct 01 13:44:36 ... loading chunks from disk, packing SA...
+Oct 01 13:44:56 ... finished generating suffix array
+Oct 01 13:44:56 ... generating Suffix Array index
+Oct 01 13:47:18 ... completed Suffix Array index
+Oct 01 13:47:18 ..... processing annotations GTF
+Processing sjdbGTFfile=/mnt/Annotation/Latipes_merged.gtf, found:
+		45444 transcripts
+		440961 exons (non-collapsed)
+		200698 collapsed junctions
+Oct 01 13:47:20 ..... finished GTF processing
+Oct 01 13:47:20   Loaded database junctions from the GTF file: /mnt/Annotation/Latipes_merged.gtf: 200698 total junctions
 
 WARNING: long repeat for junction # 3197 : NC_019859.2 9995164 10001200; left shift = 255; right shift = 255
 WARNING: long repeat for junction # 3198 : NC_019859.2 9995189 10001225; left shift = 255; right shift = 255
@@ -364,21 +392,196 @@ WARNING: long repeat for junction # 5336 : NC_019859.2 17515341 17518702; left s
 WARNING: long repeat for junction # 5337 : NC_019859.2 17516668 17519317; left shift = 112; right shift = 255
 WARNING: long repeat for junction # 10237 : NC_019859.2 37655907 37661304; left shift = 255; right shift = 42
 WARNING: long repeat for junction # 10239 : NC_019859.2 37656620 37662020; left shift = 10; right shift = 255
-Oct 01 09:30:48   Finished preparing junctions
-Oct 01 09:30:48 ..... inserting junctions into the genome indices
-Oct 01 09:30:50   Finished SA search: number of new junctions=10239, old junctions=0
-Oct 01 09:30:51   Finished sorting SA indicesL nInd=4095600
-Oct 01 09:30:52   Finished inserting junction indices
-Oct 01 09:30:59   Finished SAi
-Oct 01 09:30:59 ..... finished inserting junctions into genome
-Oct 01 09:30:59 ... writing Genome to disk ...
-Writing 39806775 bytes into /home/ubuntu/scp/Annotation/Genome ; empty space on disk = 15609556992 bytes ... done
-SA size in bytes: 327829857
-Oct 01 09:30:59 ... writing Suffix Array to disk ...
-Writing 327829857 bytes into /home/ubuntu/scp/Annotation/SA ; empty space on disk = 15569747968 bytes ... done
-Oct 01 09:30:59 ... writing SAindex to disk
-Writing 8 bytes into /home/ubuntu/scp/Annotation/SAindex ; empty space on disk = 15241916416 bytes ... done
-Writing 120 bytes into /home/ubuntu/scp/Annotation/SAindex ; empty space on disk = 15241916416 bytes ... done
-Writing 1565873491 bytes into /home/ubuntu/scp/Annotation/SAindex ; empty space on disk = 15241916416 bytes ... done
-Oct 01 09:31:00 ..... finished successfully
+WARNING: long repeat for junction # 10241 : NC_019860.2 954 6351; left shift = 145; right shift = 255
+WARNING: long repeat for junction # 10242 : NC_019860.2 1386 6792; left shift = 157; right shift = 255
+WARNING: long repeat for junction # 10243 : NC_019860.2 1946 7356; left shift = 77; right shift = 255
+WARNING: long repeat for junction # 10244 : NC_019860.2 2634 8044; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 10245 : NC_019860.2 7493 12793; left shift = 213; right shift = 255
+WARNING: long repeat for junction # 10247 : NC_019860.2 12295 17691; left shift = 116; right shift = 255
+WARNING: long repeat for junction # 10255 : NC_019860.2 19352 24243; left shift = 42; right shift = 255
+WARNING: long repeat for junction # 10256 : NC_019860.2 19406 24297; left shift = 96; right shift = 255
+WARNING: long repeat for junction # 10257 : NC_019860.2 19464 24355; left shift = 154; right shift = 255
+WARNING: long repeat for junction # 10397 : NC_019860.2 443725 555143; left shift = 255; right shift = 4
+WARNING: long repeat for junction # 11295 : NC_019860.2 4343531 4348452; left shift = 71; right shift = 255
+WARNING: long repeat for junction # 11780 : NC_019860.2 8612684 8615209; left shift = 125; right shift = 255
+WARNING: long repeat for junction # 14051 : NC_019860.2 20122883 20129940; left shift = 255; right shift = 183
+WARNING: long repeat for junction # 16910 : NC_019861.2 7345406 7349360; left shift = 255; right shift = 91
+WARNING: long repeat for junction # 17553 : NC_019861.2 12076453 12079072; left shift = 90; right shift = 255
+WARNING: long repeat for junction # 17595 : NC_019861.2 12367282 12374556; left shift = 128; right shift = 255
+WARNING: long repeat for junction # 17596 : NC_019861.2 12367418 12374692; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 28696 : NC_019862.2 14471130 14478462; left shift = 255; right shift = 111
+WARNING: long repeat for junction # 28697 : NC_019862.2 14471229 14478561; left shift = 255; right shift = 12
+WARNING: long repeat for junction # 32747 : NC_019862.2 29544659 29548476; left shift = 30; right shift = 255
+WARNING: long repeat for junction # 32905 : NC_019862.2 29900646 29901194; left shift = 180; right shift = 255
+WARNING: long repeat for junction # 33397 : NC_019862.2 31563775 31839898; left shift = 20; right shift = 255
+WARNING: long repeat for junction # 34182 : NC_019863.2 1524464 1531609; left shift = 68; right shift = 255
+WARNING: long repeat for junction # 37208 : NC_019863.2 12749303 12759682; left shift = 32; right shift = 255
+WARNING: long repeat for junction # 37441 : NC_019863.2 13664331 13677214; left shift = 63; right shift = 255
+WARNING: long repeat for junction # 39345 : NC_019863.2 21828613 21835791; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 39346 : NC_019863.2 21828791 21835969; left shift = 255; right shift = 247
+WARNING: long repeat for junction # 39347 : NC_019863.2 21828932 21836110; left shift = 255; right shift = 106
+WARNING: long repeat for junction # 41938 : NC_019863.2 30087197 30093373; left shift = 116; right shift = 255
+WARNING: long repeat for junction # 47430 : NC_019864.2 15670552 15671064; left shift = 43; right shift = 255
+WARNING: long repeat for junction # 47434 : NC_019864.2 15673021 15673698; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 51600 : NC_019864.2 27260064 27265197; left shift = 255; right shift = 116
+WARNING: long repeat for junction # 58632 : NC_019865.2 15842292 15845806; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 58634 : NC_019865.2 15842587 15846101; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 58635 : NC_019865.2 15842673 15846187; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 61607 : NC_019865.2 25862743 25870752; left shift = 46; right shift = 255
+WARNING: long repeat for junction # 61609 : NC_019865.2 25862781 25870790; left shift = 84; right shift = 255
+WARNING: long repeat for junction # 61610 : NC_019865.2 25862877 25870886; left shift = 180; right shift = 255
+WARNING: long repeat for junction # 61612 : NC_019865.2 25863027 25871036; left shift = 255; right shift = 203
+WARNING: long repeat for junction # 61613 : NC_019865.2 25863106 25871115; left shift = 255; right shift = 124
+WARNING: long repeat for junction # 61621 : NC_019865.2 25870241 25877212; left shift = 102; right shift = 255
+WARNING: long repeat for junction # 61622 : NC_019865.2 25870464 25877435; left shift = 255; right shift = 192
+WARNING: long repeat for junction # 61623 : NC_019865.2 25870509 25877480; left shift = 255; right shift = 147
+WARNING: long repeat for junction # 63809 : NC_019866.2 712063 803695; left shift = 30; right shift = 255
+WARNING: long repeat for junction # 69144 : NC_019866.2 15110325 15117149; left shift = 255; right shift = 104
+WARNING: long repeat for junction # 72774 : NC_019867.2 12809 18324; left shift = 191; right shift = 255
+WARNING: long repeat for junction # 72775 : NC_019867.2 12949 18464; left shift = 255; right shift = 136
+WARNING: long repeat for junction # 72776 : NC_019867.2 13115 18630; left shift = 29; right shift = 255
+WARNING: long repeat for junction # 72778 : NC_019867.2 15222 20737; left shift = 170; right shift = 255
+WARNING: long repeat for junction # 75027 : NC_019867.2 6667009 6670487; left shift = 255; right shift = 122
+WARNING: long repeat for junction # 82224 : NC_019867.2 30031985 30039504; left shift = 75; right shift = 255
+WARNING: long repeat for junction # 82456 : NC_019867.2 30538135 30577633; left shift = 255; right shift = 8
+WARNING: long repeat for junction # 83437 : NC_019867.2 33394386 33397559; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 83439 : NC_019867.2 33394450 33397623; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 83694 : NC_019868.2 2162414 2168820; left shift = 26; right shift = 255
+WARNING: long repeat for junction # 83695 : NC_019868.2 2163554 2169961; left shift = 127; right shift = 255
+WARNING: long repeat for junction # 83696 : NC_019868.2 2164218 2170625; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 86146 : NC_019868.2 13691036 13692151; left shift = 29; right shift = 255
+WARNING: long repeat for junction # 86165 : NC_019868.2 13701125 13702240; left shift = 15; right shift = 255
+WARNING: long repeat for junction # 86677 : NC_019868.2 15464335 15465549; left shift = 255; right shift = 74
+WARNING: long repeat for junction # 87380 : NC_019868.2 17487740 17502831; left shift = 12; right shift = 255
+WARNING: long repeat for junction # 88547 : NC_019868.2 23045517 23049486; left shift = 255; right shift = 254
+WARNING: long repeat for junction # 89202 : NC_019868.2 26678999 26682143; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 89203 : NC_019868.2 26679046 26682190; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 89204 : NC_019868.2 26679313 26682457; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 92587 : NC_019869.2 9657568 9660931; left shift = 255; right shift = 23
+WARNING: long repeat for junction # 93298 : NC_019869.2 13810945 13814821; left shift = 37; right shift = 255
+WARNING: long repeat for junction # 93310 : NC_019869.2 14073053 14079375; left shift = 115; right shift = 255
+WARNING: long repeat for junction # 94900 : NC_019869.2 19377659 19379543; left shift = 11; right shift = 255
+WARNING: long repeat for junction # 94901 : NC_019869.2 19377953 19379837; left shift = 255; right shift = 34
+WARNING: long repeat for junction # 96666 : NC_019869.2 24077760 24085269; left shift = 195; right shift = 255
+WARNING: long repeat for junction # 96851 : NC_019869.2 25468735 25527482; left shift = 17; right shift = 255
+WARNING: long repeat for junction # 97430 : NC_019870.2 219232 222831; left shift = 255; right shift = 11
+WARNING: long repeat for junction # 97980 : NC_019870.2 1429802 1436053; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 97985 : NC_019870.2 1430495 1436746; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 97986 : NC_019870.2 1430841 1437092; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 97987 : NC_019870.2 1430971 1437222; left shift = 255; right shift = 227
+WARNING: long repeat for junction # 97988 : NC_019870.2 1431015 1437266; left shift = 255; right shift = 183
+WARNING: long repeat for junction # 97989 : NC_019870.2 1431074 1437325; left shift = 255; right shift = 124
+WARNING: long repeat for junction # 98868 : NC_019870.2 2892724 2898714; left shift = 161; right shift = 255
+WARNING: long repeat for junction # 101274 : NC_019870.2 11140074 11144089; left shift = 230; right shift = 255
+WARNING: long repeat for junction # 102442 : NC_019870.2 14444012 14490552; left shift = 14; right shift = 255
+WARNING: long repeat for junction # 102477 : NC_019870.2 14499598 14507256; left shift = 255; right shift = 25
+WARNING: long repeat for junction # 110649 : NC_019871.2 17992568 17996614; left shift = 255; right shift = 38
+WARNING: long repeat for junction # 111861 : NC_019871.2 22031463 22036161; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 111862 : NC_019871.2 22031768 22036466; left shift = 255; right shift = 240
+WARNING: long repeat for junction # 111863 : NC_019871.2 22032002 22036700; left shift = 255; right shift = 6
+WARNING: long repeat for junction # 112818 : NC_019871.2 25928589 25935146; left shift = 171; right shift = 255
+WARNING: long repeat for junction # 112819 : NC_019871.2 25928908 25935465; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 114268 : NC_019871.2 33688618 33711752; left shift = 13; right shift = 255
+WARNING: long repeat for junction # 114269 : NC_019871.2 33688659 33711793; left shift = 54; right shift = 255
+WARNING: long repeat for junction # 114271 : NC_019871.2 33689173 33712307; left shift = 32; right shift = 255
+WARNING: long repeat for junction # 114284 : NC_019871.2 33692166 33715164; left shift = 255; right shift = 22
+WARNING: long repeat for junction # 114301 : NC_019871.2 33695460 33718459; left shift = 74; right shift = 255
+WARNING: long repeat for junction # 115158 : NC_019872.2 5125567 5129231; left shift = 255; right shift = 78
+WARNING: long repeat for junction # 115263 : NC_019872.2 6477410 6481235; left shift = 230; right shift = 255
+WARNING: long repeat for junction # 115264 : NC_019872.2 6477564 6481389; left shift = 255; right shift = 120
+WARNING: long repeat for junction # 117039 : NC_019872.2 11990916 11997148; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 117040 : NC_019872.2 11992919 11999151; left shift = 255; right shift = 213
+WARNING: long repeat for junction # 120373 : NC_019872.2 21657882 21658109; left shift = 255; right shift = 2
+WARNING: long repeat for junction # 124025 : NC_019873.2 7499255 7597887; left shift = 255; right shift = 29
+WARNING: long repeat for junction # 126059 : NC_019873.2 15989307 15995169; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 133215 : NC_019874.2 11055973 11062334; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 133797 : NC_019874.2 14496650 14508412; left shift = 23; right shift = 255
+WARNING: long repeat for junction # 140626 : NC_019874.2 32927084 32930266; left shift = 64; right shift = 255
+WARNING: long repeat for junction # 140627 : NC_019874.2 32927273 32930455; left shift = 253; right shift = 255
+WARNING: long repeat for junction # 140628 : NC_019874.2 32927434 32930616; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 140629 : NC_019874.2 32927493 32930675; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 140630 : NC_019874.2 32927969 32931151; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 140631 : NC_019874.2 32928064 32931246; left shift = 255; right shift = 201
+WARNING: long repeat for junction # 140632 : NC_019874.2 32928314 32931496; left shift = 48; right shift = 255
+WARNING: long repeat for junction # 140633 : NC_019874.2 32928390 32931572; left shift = 124; right shift = 255
+WARNING: long repeat for junction # 140634 : NC_019874.2 32928645 32931827; left shift = 255; right shift = 60
+WARNING: long repeat for junction # 140635 : NC_019874.2 32929045 32932227; left shift = 255; right shift = 242
+WARNING: long repeat for junction # 140636 : NC_019874.2 32929071 32932253; left shift = 255; right shift = 216
+WARNING: long repeat for junction # 140637 : NC_019874.2 32929465 32932648; left shift = 181; right shift = 255
+WARNING: long repeat for junction # 140638 : NC_019874.2 32932254 32935367; left shift = 255; right shift = 216
+WARNING: long repeat for junction # 140639 : NC_019874.2 32932544 32935656; left shift = 76; right shift = 255
+WARNING: long repeat for junction # 143452 : NC_019875.2 11382375 11385881; left shift = 20; right shift = 255
+WARNING: long repeat for junction # 147533 : NC_019875.2 23565443 23588091; left shift = 255; right shift = 53
+WARNING: long repeat for junction # 147953 : NC_019875.2 24861188 24865210; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 147959 : NC_019875.2 24862446 24866468; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 147960 : NC_019875.2 24862757 24866779; left shift = 255; right shift = 131
+WARNING: long repeat for junction # 148238 : NC_019875.2 25451148 25451691; left shift = 96; right shift = 255
+WARNING: long repeat for junction # 149273 : NC_019875.2 28803414 28806994; left shift = 255; right shift = 22
+WARNING: long repeat for junction # 150294 : NC_019875.2 31781271 31788873; left shift = 157; right shift = 255
+WARNING: long repeat for junction # 153400 : NC_019876.2 14724911 14735207; left shift = 255; right shift = 58
+WARNING: long repeat for junction # 155307 : NC_019876.2 25757602 25763486; left shift = 114; right shift = 255
+WARNING: long repeat for junction # 155874 : NC_019876.2 28896890 28907491; left shift = 42; right shift = 255
+WARNING: long repeat for junction # 156879 : NC_019877.2 866139 873300; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 157142 : NC_019877.2 1675696 1681532; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 157143 : NC_019877.2 1678518 1681433; left shift = 221; right shift = 255
+WARNING: long repeat for junction # 157144 : NC_019877.2 1678666 1681581; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 159375 : NC_019877.2 7084794 7090979; left shift = 39; right shift = 255
+WARNING: long repeat for junction # 159376 : NC_019877.2 7084905 7091090; left shift = 150; right shift = 255
+WARNING: long repeat for junction # 159381 : NC_019877.2 7091633 7095938; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 161851 : NC_019877.2 12790202 12797794; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 161852 : NC_019877.2 12791146 12798738; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 161853 : NC_019877.2 12793850 12801442; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 162109 : NC_019877.2 13520217 13524479; left shift = 255; right shift = 131
+WARNING: long repeat for junction # 162693 : NC_019877.2 16598102 16601971; left shift = 120; right shift = 255
+WARNING: long repeat for junction # 162783 : NC_019877.2 17550016 17554939; left shift = 199; right shift = 255
+WARNING: long repeat for junction # 164836 : NC_019877.2 25464439 25467346; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 164837 : NC_019877.2 25464542 25467449; left shift = 255; right shift = 247
+WARNING: long repeat for junction # 164838 : NC_019877.2 25464636 25467543; left shift = 255; right shift = 153
+WARNING: long repeat for junction # 164839 : NC_019877.2 25464946 25467854; left shift = 162; right shift = 255
+WARNING: long repeat for junction # 166193 : NC_019878.2 6838577 6844857; left shift = 169; right shift = 255
+WARNING: long repeat for junction # 166331 : NC_019878.2 7899541 7903771; left shift = 230; right shift = 255
+WARNING: long repeat for junction # 166332 : NC_019878.2 7899696 7903926; left shift = 255; right shift = 120
+WARNING: long repeat for junction # 166512 : NC_019878.2 9738235 9744075; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 166513 : NC_019878.2 9738293 9744133; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 166514 : NC_019878.2 9738391 9744231; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 167160 : NC_019878.2 12482526 12533522; left shift = 255; right shift = 50
+WARNING: long repeat for junction # 171229 : NC_019879.2 847401 849317; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 172715 : NC_019879.2 8115413 8123108; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 173668 : NC_019879.2 11423208 11428466; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 173670 : NC_019879.2 11423459 11428717; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 173671 : NC_019879.2 11423562 11428820; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 175268 : NC_019879.2 19277539 19281511; left shift = 255; right shift = 60
+WARNING: long repeat for junction # 179890 : NC_019880.2 1568891 1576111; left shift = 255; right shift = 223
+WARNING: long repeat for junction # 182391 : NC_019880.2 9166525 9172577; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 182394 : NC_019880.2 9167305 9173357; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 182395 : NC_019880.2 9167887 9173939; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 185587 : NC_019880.2 17851872 17858917; left shift = 255; right shift = 81
+WARNING: long repeat for junction # 186115 : NC_019880.2 20039660 20044321; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 186626 : NC_019880.2 21692131 21692668; left shift = 255; right shift = 56
+WARNING: long repeat for junction # 199182 : NC_019882.2 18605976 18608917; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 199183 : NC_019882.2 18606391 18609332; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 199184 : NC_019882.2 18606674 18609615; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 199185 : NC_019882.2 18606746 18609687; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 199186 : NC_019882.2 18608100 18611041; left shift = 255; right shift = 232
+WARNING: long repeat for junction # 199187 : NC_019882.2 18608194 18611135; left shift = 255; right shift = 138
+WARNING: long repeat for junction # 199188 : NC_019882.2 18609063 18612002; left shift = 255; right shift = 32
+WARNING: long repeat for junction # 199190 : NC_019882.2 18612273 18617585; left shift = 255; right shift = 5
+WARNING: long repeat for junction # 199483 : NC_019882.2 19707889 19707972; left shift = 26; right shift = 255
+Oct 01 13:47:20   Finished preparing junctions
+Oct 01 13:47:20 ..... inserting junctions into the genome indices
+Oct 01 13:47:59   Finished SA search: number of new junctions=200641, old junctions=0
+Oct 01 13:48:34   Finished sorting SA indicesL nInd=80256142
+Oct 01 13:48:57   Finished inserting junction indices
+Oct 01 13:49:19   Finished SAi
+Oct 01 13:49:19 ..... finished inserting junctions into genome
+Oct 01 13:49:19 ... writing Genome to disk ...
+Writing 777739913 bytes into /mnt/Reference/Genome ; empty space on disk = 876051156992 bytes ... done
+SA size in bytes: 6382976799
+Oct 01 13:49:19 ... writing Suffix Array to disk ...
+Writing 6382976799 bytes into /mnt/Reference/SA ; empty space on disk = 875270287360 bytes ... done
+Oct 01 13:49:23 ... writing SAindex to disk
+Writing 8 bytes into /mnt/Reference/SAindex ; empty space on disk = 868890460160 bytes ... done
+Writing 120 bytes into /mnt/Reference/SAindex ; empty space on disk = 868890460160 bytes ... done
+Writing 1565873491 bytes into /mnt/Reference/SAindex ; empty space on disk = 868890460160 bytes ... done
+Oct 01 13:49:24 ..... finished successfully
 DONE: Genome generation, EXITING
